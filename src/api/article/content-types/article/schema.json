@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Content": {
+      "type": "richtext",
+      "required": true
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Contract": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Article",
+        "NFT",
+        "Token",
+        "Update"
+      ],
+      "required": true,
+      "default": "Article"
+    }
+  }
+}

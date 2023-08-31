@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nft_mints",
+  "info": {
+    "singularName": "nft-mint",
+    "pluralName": "nft-mints",
+    "displayName": "NFTMint",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Symbol": {
+      "type": "string",
+      "required": true
+    },
+    "PreviewImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Contract": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "MaxMint": {
+      "type": "integer"
+    },
+    "Description": {
+      "type": "string",
+      "required": true
+    },
+    "MarketplaceURL": {
+      "type": "string"
+    },
+    "Chain": {
+      "type": "enumeration",
+      "enum": [
+        "Shibarium",
+        "Dogechain"
+      ],
+      "required": true,
+      "default": "Shibarium"
+    },
+    "WebsiteURL": {
+      "type": "string"
+    },
+    "Twitter": {
+      "type": "string"
+    },
+    "Telegram": {
+      "type": "string"
+    },
+    "StartTime": {
+      "type": "datetime"
+    }
+  }
+}

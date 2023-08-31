@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chewy_motds",
+  "info": {
+    "singularName": "chewy-motd",
+    "pluralName": "chewy-motds",
+    "displayName": "Chewy MOTD"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Headline": {
+      "type": "string",
+      "required": true
+    },
+    "Content": {
+      "type": "richtext",
+      "required": true
+    },
+    "StartTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "EndTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "Button1Name": {
+      "type": "string"
+    },
+    "Button1URL": {
+      "type": "string"
+    },
+    "Button1IsInternal": {
+      "type": "boolean"
+    },
+    "Button2Name": {
+      "type": "string"
+    },
+    "Button2URL": {
+      "type": "string"
+    },
+    "Button2IsInternal": {
+      "type": "boolean"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

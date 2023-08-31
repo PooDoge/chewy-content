@@ -57,24 +57,16 @@
       "required": true
     },
     "WebsiteURL": {
-      "type": "string",
-      "regex": "/^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$/",
-      "default": "https://"
+      "type": "string"
     },
     "Twitter": {
-      "type": "string",
-      "regex": "/^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$/",
-      "default": "https://twitter.com/"
+      "type": "string"
     },
     "Telegram": {
-      "type": "string",
-      "regex": "/^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$/",
-      "default": "https://t.me/"
+      "type": "string"
     },
     "Discord": {
-      "type": "string",
-      "regex": "/^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$/",
-      "default": "https://"
+      "type": "string"
     },
     "LaunchDate": {
       "type": "date",
@@ -100,6 +92,18 @@
     "Symbol": {
       "type": "string",
       "required": true
+    },
+    "LP_Pair": {
+      "type": "string"
+    },
+    "PairBacking": {
+      "type": "string"
+    },
+    "CG_URL": {
+      "type": "string"
+    },
+    "CMC_URL": {
+      "type": "string"
     }
   }
 }

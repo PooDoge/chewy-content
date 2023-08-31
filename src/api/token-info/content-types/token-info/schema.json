@@ -1,0 +1,105 @@
+{
+  "kind": "collectionType",
+  "collectionName": "token_infos",
+  "info": {
+    "singularName": "token-info",
+    "pluralName": "token-infos",
+    "displayName": "Token Info",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ProjectName": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "TokenCA": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "TokenLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "PreviewImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "NFT_CA": {
+      "type": "string",
+      "unique": true
+    },
+    "DescriptionLong": {
+      "type": "richtext",
+      "required": true
+    },
+    "DescriptionShort": {
+      "type": "string",
+      "required": true
+    },
+    "WebsiteURL": {
+      "type": "string",
+      "regex": "/^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$/",
+      "default": "https://"
+    },
+    "Twitter": {
+      "type": "string",
+      "regex": "/^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$/",
+      "default": "https://twitter.com/"
+    },
+    "Telegram": {
+      "type": "string",
+      "regex": "/^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$/",
+      "default": "https://t.me/"
+    },
+    "Discord": {
+      "type": "string",
+      "regex": "/^https?:\\/\\/(?:www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)$/",
+      "default": "https://"
+    },
+    "LaunchDate": {
+      "type": "date",
+      "required": true
+    },
+    "ProjectCategory": {
+      "type": "enumeration",
+      "enum": [
+        "Memecoin",
+        "NFT",
+        "DeFi",
+        "Metaverse",
+        "GameFi",
+        "Utility",
+        "Oracle"
+      ]
+    },
+    "Partner": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Symbol": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

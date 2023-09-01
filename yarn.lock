@@ -1443,6 +1443,14 @@
     "@strapi/utils" "4.12.7"
     fs-extra "10.0.0"
 
+"@strapi/provider-upload-local@^4.13.1":
+  version "4.13.1"
+  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-local/-/provider-upload-local-4.13.1.tgz#594ceece7e867d5aa6ce7163e5333b0d7969278d"
+  integrity sha512-IqHoGnAuPDDt4Scix9heDBSmIqbUHZ0Z8rHhxjI/FMUHpKUO5OtMmukqeN9urtSm2wOndNRKxC5QnxdX7wSG/w==
+  dependencies:
+    "@strapi/utils" "4.13.1"
+    fs-extra "10.0.0"
+
 "@strapi/strapi@4.12.7":
   version "4.12.7"
   resolved "https://registry.yarnpkg.com/@strapi/strapi/-/strapi-4.12.7.tgz#51ecd24854f5d41bd972c064fff7fc99186ef191"
@@ -1546,6 +1554,18 @@
   version "4.12.7"
   resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.12.7.tgz#b94175cb80b978173a08163680d0f38dd0698364"
   integrity sha512-M+huzEKfLVbwrWN9SwTGVZVNLAjMVtqmd21sCOKMp8sEtqSR62g9Ovr6XZHWHgl/m7nlqdpaQLJM9vLChMXMgA==
+  dependencies:
+    "@sindresorhus/slugify" "1.1.0"
+    date-fns "2.30.0"
+    http-errors "1.8.1"
+    lodash "4.17.21"
+    p-map "4.0.0"
+    yup "0.32.9"
+
+"@strapi/utils@4.13.1":
+  version "4.13.1"
+  resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.13.1.tgz#03f9fee871481af4abb55733aeb21f61a3c64cec"
+  integrity sha512-IW0ac0aeJbE6wptzW/7yZ4KPwRaqshHtNPCOrWAnG0L1Is/UkpwVUBUSmWq12m1utJF+nIenwgHH8jbKYolhFw==
   dependencies:
     "@sindresorhus/slugify" "1.1.0"
     date-fns "2.30.0"
@@ -2360,11 +2380,6 @@ base@^0.11.1:
     isobject "^3.0.1"
     mixin-deep "^1.2.0"
     pascalcase "^0.1.1"
-
-basic-ftp@^5.0.2:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/basic-ftp/-/basic-ftp-5.0.3.tgz#b14c0fe8111ce001ec913686434fe0c2fb461228"
-  integrity sha512-QHX8HLlncOLpy54mh+k/sWIFd0ThmRqwe9ZjELybGZK+tZ8rUb9VO0saKJUROTbE+KhzDUT7xziGpGrW8Kmd+g==
 
 batch@0.6.1:
   version "0.6.1"
@@ -3565,11 +3580,6 @@ elliptic@^6.5.4:
     inherits "^2.0.4"
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
-
-emitter-component@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/emitter-component/-/emitter-component-1.1.1.tgz#065e2dbed6959bf470679edabeaf7981d1003ab6"
-  integrity sha512-G+mpdiAySMuB7kesVRLuyvYRqDmshB7ReKEVuyBPkzQlmiDiLrt7hHHIy4Aff552bgknVN7B2/d3lzhGO5dvpQ==
 
 emittery@^0.12.1:
   version "0.12.1"
@@ -7871,14 +7881,6 @@ std-env@^3.0.1:
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.4.3.tgz#326f11db518db751c83fd58574f449b7c3060910"
   integrity sha512-f9aPhy8fYBuMN+sNfakZV18U39PbalgjXG3lLB9WkaYTxijru61wb57V9wxxNthXM5Sd88ETBWi29qLAsHO52Q==
 
-strapi4-ftp-provider@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/strapi4-ftp-provider/-/strapi4-ftp-provider-1.0.5.tgz#dd9882e99ea8fc4afd4eda782eec9031f01dee29"
-  integrity sha512-29vxM/EufsEf4SaIjw+p4hUaptruQQKGiPznkczohz9EiQx+z+meSsdfENFpwXMs/Fqw1rjTfn+Gf66pgwU1hw==
-  dependencies:
-    basic-ftp "^5.0.2"
-    stream "^0.0.2"
-
 stream-chain@2.2.5, stream-chain@^2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/stream-chain/-/stream-chain-2.2.5.tgz#b30967e8f14ee033c5b9a19bbe8a2cba90ba0d09"
@@ -7895,13 +7897,6 @@ stream-slice@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/stream-slice/-/stream-slice-0.1.2.tgz#2dc4f4e1b936fb13f3eb39a2def1932798d07a4b"
   integrity sha512-QzQxpoacatkreL6jsxnVb7X5R/pGw9OUv2qWTYWnmLpg4NdN31snPy/f3TdQE1ZUXaThRvj1Zw4/OGg0ZkaLMA==
-
-stream@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/stream/-/stream-0.0.2.tgz#7f5363f057f6592c5595f00bc80a27f5cec1f0ef"
-  integrity sha512-gCq3NDI2P35B2n6t76YJuOp7d6cN/C7Rt0577l91wllh0sY9ZBuw9KaSGqH/b0hzn3CWWJbpbW0W0WvQ1H/Q7g==
-  dependencies:
-    emitter-component "^1.1.1"
 
 string-argv@~0.3.1:
   version "0.3.2"

@@ -12,8 +12,6 @@ module.exports = [
             "data:",
             "blob:",
             "dl.airtable.com",
-            "*.ipfs.dweb.link", // ipfs.tech
-            "*.ipfs.cf-ipfs.com", // cloudflare.com
             "*.ipfs.w3s.link", // web3.storage
           ],
           "media-src": [
@@ -21,15 +19,13 @@ module.exports = [
             "data:",
             "blob:",
             "dl.airtable.com",
-            "*.ipfs.dweb.link", // ipfs.tech
-            "*.ipfs.cf-ipfs.com", // cloudflare.com
             "*.ipfs.w3s.link", // web3.storage
           ],
           upgradeInsecureRequests: null,
         },
       },
     },
-  }, ,
+  },
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::logger',

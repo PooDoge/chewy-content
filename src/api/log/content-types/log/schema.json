@@ -4,7 +4,8 @@
   "info": {
     "singularName": "log",
     "pluralName": "logs",
-    "displayName": "Log"
+    "displayName": "Log",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,16 +15,25 @@
     "type": {
       "type": "string"
     },
-    "time": {
+    "name": {
       "type": "string"
     },
-    "ip": {
-      "type": "string"
-    },
-    "data": {
+    "message": {
       "type": "text"
     },
-    "url": {
+    "stack": {
+      "type": "text"
+    },
+    "msg": {
+      "type": "text"
+    },
+    "filename": {
+      "type": "string"
+    },
+    "line": {
+      "type": "string"
+    },
+    "col": {
       "type": "string"
     }
   }

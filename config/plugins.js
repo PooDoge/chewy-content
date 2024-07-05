@@ -1,10 +1,9 @@
-module.exports = ({ env }) => ({
-    // ...
-    upload: {
+module.exports = () => ({
+  upload: {
       config: {
         provider: "strapi-provider-upload-ipfs-storage",
         providerOptions: {
-          defaultStorage: "web3",
+          defaultStorage: "filebase",
           filebase: {
             // https://console.filebase.com/keys
             key: env("FILEBASE_KEY"),
@@ -32,5 +31,4 @@ module.exports = ({ env }) => ({
         },
       },
     },
-    // ...
-  });
+});

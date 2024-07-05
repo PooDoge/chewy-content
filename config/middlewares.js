@@ -14,6 +14,7 @@ module.exports = [
             "dl.airtable.com",
             "*.ipfs.w3s.link", // web3.storage
             "*.ipfs.cf-ipfs.com", // filebase
+            "*.ipfs.cf-ipfs.com/*",
           ],
           "media-src": [
             "'self'",

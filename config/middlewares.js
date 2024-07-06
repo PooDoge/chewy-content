@@ -22,6 +22,8 @@ module.exports = [
             "blob:",
             "dl.airtable.com",
             "*.ipfs.w3s.link", // web3.storage
+            "*.ipfs.cf-ipfs.com", // filebase
+            "*.ipfs.cf-ipfs.com/*",
           ],
           upgradeInsecureRequests: null,
         },

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bury_pools",
+  "info": {
+    "singularName": "bury-pool",
+    "pluralName": "bury-pools",
+    "displayName": "bury-farms",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pid": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "tokenA_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "tokenA_address": {
+      "type": "string",
+      "required": true
+    },
+    "tokenB_name": {
+      "type": "string"
+    },
+    "tokenB_address": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chewy_marketplaces",
+  "info": {
+    "singularName": "chewy-marketplace",
+    "pluralName": "chewy-marketplaces",
+    "displayName": "chewy-marketplace",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "collectionAddress": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "collections": {
+      "type": "json",
+      "required": false
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "maxSupply": {
+      "type": "integer"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "symbol": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "totalSupply": {
+      "type": "integer",
+      "required": true
+    },
+    "bannerLarge": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "bannerSmall": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "attributes": {
+      "type": "json"
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

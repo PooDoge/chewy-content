@@ -21,17 +21,6 @@
       "type": "json",
       "required": false
     },
-    "thumbnail": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "name": {
       "type": "string",
       "required": true,

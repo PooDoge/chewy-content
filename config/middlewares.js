@@ -12,9 +12,11 @@ module.exports = [
             "data:",
             "blob:",
             "dl.airtable.com",
+            "ipfs.cf-ipfs.com",
+            "cf-ipfs.com",
+            "ipfs.cf-ipfs.com",
             "*.ipfs.w3s.link", // web3.storage
             "*.ipfs.cf-ipfs.com", // filebase
-            "*.ipfs.cf-ipfs.com/*",
           ],
           "media-src": [
             "'self'",

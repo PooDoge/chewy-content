@@ -31,6 +31,16 @@
     },
     "tokenB_address": {
       "type": "string"
+    },
+    "tokenA_info": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::token-info.token-info"
+    },
+    "tokenB_info": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::token-info.token-info"
     }
   }
 }

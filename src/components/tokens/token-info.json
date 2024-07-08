@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_tokens_token_infos",
+  "info": {
+    "displayName": "token-info",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "pairAddress": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "tokenLogo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "symbol": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "totalSupply": {
+      "type": "integer"
+    }
+  }
+}
